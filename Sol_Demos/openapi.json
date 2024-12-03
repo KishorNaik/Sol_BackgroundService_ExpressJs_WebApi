@@ -1,0 +1,59 @@
+{
+  "components": {
+    "schemas": {},
+    "securitySchemes": {
+      "BearerAuth": {
+        "type": "http",
+        "scheme": "bearer",
+        "bearerFormat": "JWT"
+      }
+    }
+  },
+  "info": {
+    "title": "A sample API",
+    "version": "1.0.0",
+    "description": "Generated with `routing-controllers-openapi`"
+  },
+  "openapi": "3.0.0",
+  "paths": {
+    "/api/v1/demo/start": {
+      "post": {
+        "operationId": "StartBackgroundServiceController.startAsync",
+        "responses": {
+          "200": {
+            "content": {
+              "application/json": {}
+            },
+            "description": "Successful response"
+          }
+        },
+        "summary": "Start Background Service",
+        "tags": [
+          "demo"
+        ]
+      }
+    },
+    "/api/v1/demo/stop": {
+      "post": {
+        "operationId": "StopBackgroundServiceController.stopAsync",
+        "responses": {
+          "200": {
+            "content": {
+              "application/json": {}
+            },
+            "description": "Successful response"
+          }
+        },
+        "summary": "Start Background Service",
+        "tags": [
+          "demo"
+        ]
+      }
+    }
+  },
+  "security": [
+    {
+      "BearerAuth": []
+    }
+  ]
+}
